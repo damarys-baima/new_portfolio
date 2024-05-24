@@ -22,7 +22,6 @@ body{
     color: var(--cor-primaria);
 }
 
-/*CABEÇALHO*/
 .cabecalho {
     padding: 5% 0% 0% 15%;
 }
@@ -65,7 +64,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;  /*gap separa o texto, fiz uso e tirei margin*/
+    gap: 40px; 
 }
 
 .apresentacao__conteudo__titulo {
@@ -138,34 +137,29 @@ body{
     padding: 10%;
 }
 
-.apresentacao__conteudo__imagem1 {
+.apresentacao_projetos {
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8% 15%;
+
+}
+
+.apresentacao__conteudo__imagem {
+    max-width: 100%;
+    height: auto; 
+    width: 300px; 
+    object-fit: cover;
+    padding: 20px;
+}
+
+.apresentacao__textinhos {
     display: flex; 
     justify-content: center; 
     gap: 10px; 
     padding: 20px; 
     font-family: var(--font-terciaria);
-}
-
-.apresentacao__conteudo__imagem2 {
-    display: flex; 
-    justify-content: center; 
-    gap: 10px; 
-    padding: 20px; 
-    font-family: var(--font-terciaria);
-}
-
-.apresentacao__conteudo__imagem1__formulario {
-    max-width: 100%;
-    height: auto; 
-    width: 300px; 
-    object-fit: cover;
-}
-
-.apresentacao__conteudo__imagem2__pong {
-    max-width: 100%;
-    height: auto; 
-    width: 300px; 
-    object-fit: cover;
 }
 
 
@@ -179,7 +173,9 @@ body{
 }
 
 .rodape__imagem{
-    width: 8%;
+    width: 35%;
+    text-align: center;
+    align-items: center;
 }
 
 .dev {
@@ -197,7 +193,7 @@ body{
     .cabecalho-menu {
         justify-content: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
     .menu {
@@ -209,4 +205,30 @@ body{
         flex-direction: column-reverse;
         padding: 5%;
     }
+    .apresentacao__imagem {
+        max-width: 90%;
+        width: 25px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 2;
+    }
+
+    .apresentacao_projetos {
+            flex-direction: column;
+            padding: 10%;
+            gap: 10%
+    }
+
+    .apresentacao__conteudo__imagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px; 
+        padding: 25px 8%;
+        max-width: 100%;
+        height: 5%;
+        margin-bottom: 20px;
+    }
+
 }
