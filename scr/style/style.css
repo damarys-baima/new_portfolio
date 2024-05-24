@@ -24,7 +24,7 @@ body{
 
 /*CABEÇALHO*/
 .cabecalho {
-    padding: 3.7% 0% 0% 15.5%;
+    padding: 5% 0% 0% 15%;
 }
 
 .cabecalho_menu_link {
@@ -37,7 +37,14 @@ body{
 
 .cabecalho_menu {
     display: flex;
-    gap:7rem; /*ajustei em rm, mas fácil de adaptar*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
 }
 
 /*APRESENTACAO*/
@@ -87,18 +94,17 @@ body{
 .apresentacao__conteudo__links__navegacao{
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    gap: 16px;
-    border: 2px solid var(--cor-secundaria);
-    width: 60%;
+    gap: 10px;
+    border: 2px solid var(--cor-primaria);
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    padding: 16px 0px;
     text-decoration: none;
     color: var(--cor-secundaria);
-    font-family: var(--font-secundaria);
 }
 
 .apresentacao__conteudo__links__navegacao:hover {
@@ -106,8 +112,9 @@ body{
 }
 
 .apresentacao__imagem {
+    max-width: 100%;
     height: auto; 
-    width: 85px; 
+    width: 300px; 
     object-fit: cover;
 }
 
@@ -184,36 +191,22 @@ body{
 /*RESPONSIVIDADE*/
 @media screen and (max-width: 1020px) {
     .cabecalho {
-        padding: 25px 2%;
-    }
-    .cabecalho__menu{
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1px;
-        flex-direction: column;
-    }
-    .apresentacao{
-        flex-direction: column-reverse;
-        padding: 25px 8%;
-        align-items: center;
-        justify-content: center;
-    }
-    .apresentacao__imagem {
-        justify-content: center;
-        align-items: center;
-        max-width: 50%;
-        display: block;
-        margin: 0 auto;
-        padding: 30px 8%;
+        padding: 10%;
     }
 
-    .apresentacao__conteudo {
-        width: auto;
-        padding: 25px 0%;
-        font-size: 5px;
-    }
-    .apresentacao__conteudo__imagens1e2 {
-        max-width: 50%;
+    .cabecalho-menu {
         justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
     }
 }
