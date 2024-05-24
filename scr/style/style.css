@@ -189,7 +189,7 @@ body{
 }
 
 .rodape__imagem{
-    width: 30%;
+    width: 9%;
 }
 
 .dev {
@@ -218,5 +218,8 @@ body{
     .apresentacao {
         flex-direction: column-reverse;
         padding: 5%;
+    }
+    .rodape__imagem{
+        width: 30%;
     }
 }
