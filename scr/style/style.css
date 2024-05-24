@@ -161,32 +161,9 @@ body{
     font-family: var(--font-secundaria);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .cabecalho{
-        padding: 5%;
-    }
-    .cabecalho__menu{
-        justify-content: center;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .apresentacao{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    .apresentacao__conteudo{
-        width: 100%;
-    }
-    .apresentacao__conteudo__imagens1e2 {
-        max-width: 100%;
-        justify-content: center;
-    }
-}
-
-/* Estilos para telas intermediárias (tablets e até 1200px) */
-@media (min-width: 769px) and (max-width: 1200px) {
-    .cabecalho{
-        padding: 8%;
+        padding: 10%;  
     }
     .cabecalho__menu{
         justify-content: center;
